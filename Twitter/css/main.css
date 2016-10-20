@@ -1,0 +1,12 @@
+.pre-scrollable {
+	height: 7em;
+}
+ul { 
+	list-style-type: none;
+ }
+ ul li.checked {
+ 	text-decoration: line-through;
+ }
+ ul li {
+ 	cursor: pointer;
+ }
