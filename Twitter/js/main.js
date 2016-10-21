@@ -1,6 +1,5 @@
 	/*no pude conectar el checkbox con que se subrayara la tarea, pero si se hacen por separado
-	si presionas sobre la tarea que agregaste si se subraya*/
-	
+	si presionas sobre la tarea que agregaste si se subraya*/	
 	// crear un tache que elimine las tareas
 	var quitaTarea = document.getElementsByTagName("LI");
 	var i;
@@ -11,18 +10,14 @@
 	  	span.appendChild(txt);
 	  	q[i].appendChild(span);
 	}
-	//lo que hace que se subraye el texto
-	var list = document.querySelector('ul');
-	list.addEventListener('click', function(ev) {
-		if (ev.target.tagName === 'LI') {
-			ev.target.classList.toggle('checked');
-		}
-	}, false);
 	// Función para crear nuevas tareas
 	function agregarTarea() {
 		//para hacer el checkbox 
-	 	var box=document.createElement("input");
+	 	var box = document.createElement("input");
 		box.type="checkbox";
+		box.onclick = function(ev) {
+			ev.target.parentNode.classList.toggle("checked");
+		};
 		//para hacer el li en donde va a escribirse la tarea
 	  	var li = document.createElement("li");
 	  	var inputValue = document.getElementById("escribirTarea").value;
@@ -61,3 +56,10 @@
 	    	div.style.display = "none";
 	  	}
 	}
+/*		//lo que hace que se subraye el texto
+			var list = document.querySelector('ul');
+	list.addEventListener('click', function(ev) {
+		if (ev.target.tagName === 'LI') {
+			ev.target.classList.toggle('checked');
+		}
+	}, false);*/
