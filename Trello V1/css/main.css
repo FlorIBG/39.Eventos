@@ -1,5 +1,5 @@
 input {
-	width: 80%;
+	width: 30%;
 }
 #inputLista div {
 	width: 80%;
@@ -10,4 +10,7 @@ input {
 }
 textarea {
 	width: 80%;
+}
+li {
+	display: inherit;
 }
