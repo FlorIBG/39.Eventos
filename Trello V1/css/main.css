@@ -14,6 +14,19 @@ textarea {
 li {
 	display: inherit;
 }
-div {
+body {
 	background-color: #CF81AD;
 }
+.acomodarListas {
+	background-color: #CF91AD;
+}
+#inputLista div {
+	width: 30%;
+}
+.nombreLista { 
+	width: 30%;
+	background-color: #CF71AD;
+	float: left;
+	font-size: 200%;
+	text-align: center;
+ }
